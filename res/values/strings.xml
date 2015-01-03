@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Weclome to ARTworld</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_course_list">CourseList</string>
+    <string name="webservice_url">http://stardock.cs.virginia.edu/louslist/Courses/view/</string>
+    <string name="filter_prompt">Filter</string>
+    <string name="image">Image</string>
+    <string name="Add_Art_Welcome">Please fill in the information about your art:</string>
+
+    <string-array name="filter_arrays">
+        <item>All</item>
+        <item>Category</item>
+        <item>Price</item>
+        <item>Title</item>
+        
+    </string-array>
+
+    <string name="title_activity_add_new_art">Add New Art</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash_screen">ARTworld</string>
+
+</resources>

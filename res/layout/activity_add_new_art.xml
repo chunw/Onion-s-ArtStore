@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg1"
+    tools:context=".AddNewArt" >
+
+    <TextView
+        android:id="@+id/addArtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" 
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/Add_Art_Welcome"
+    	android:textSize="30dp"
+        android:textColor = "#FFFFFF"
+    	android:layout_centerHorizontal="true" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/addArtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addArtWelcome"
+        android:layout_below="@+id/addArtWelcome"
+        android:text="Title"
+         android:textColor = "#FFFFFF"	
+        android:textSize="26dp"
+    	android:layout_centerHorizontal="true" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editAddTitle"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addArtTitle"
+        android:layout_toRightOf="@+id/addArtTitle"
+        android:layout_alignLeft="@+id/editAddDesc"
+        android:textColor = "#FFFF00"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="24dp"
+    	android:layout_centerHorizontal="true" 
+        android:ems="10" />
+    
+    <TextView
+        android:id="@+id/addArtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addArtTitle"
+        android:layout_below="@+id/addArtTitle"
+         android:textColor = "#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:text="Name"
+        android:textSize="26dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editAddName"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addArtName"
+        android:layout_toRightOf="@+id/addArtName"
+        android:textColor = "#FFFF00"
+        android:layout_alignLeft="@+id/editAddDesc"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="24dp"
+        android:ems="10" />
+    
+
+    <TextView
+        android:id="@+id/addArtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addArtName"
+        android:layout_below="@+id/addArtName"
+        android:textColor = "#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:text="Price ($)"
+        android:textSize="26dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editAddPrice"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addArtPrice"
+        android:layout_toRightOf="@+id/addArtPrice"
+        android:ems="10"
+        android:textColor = "#FFFF00"
+        android:layout_alignLeft="@+id/editAddDesc"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="24dp"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/addArtCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addArtPrice"
+        android:textColor = "#FFFFFF"
+        android:layout_below="@+id/addArtPrice"
+        android:layout_marginTop="10dp"
+        android:text="Category"
+        android:textSize="26dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editAddCategory"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addArtCategory"
+        android:textColor = "#FFFF00"
+        android:layout_toRightOf="@+id/addArtCategory"
+        android:layout_alignLeft="@+id/editAddDesc"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="24dp"
+        android:ems="10" />
+  
+    <TextView
+        android:id="@+id/addArtDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addArtCategory"
+        android:textColor = "#FFFFFF"
+        android:layout_below="@+id/addArtCategory"
+        android:layout_marginTop="10dp"
+        android:text="Description"
+        android:textSize="26dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editAddDesc"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addArtDesc"        
+        android:textColor = "#FFFF00"
+        android:layout_toRightOf="@+id/addArtDesc"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="24dp"
+        android:ems="10" />
+    
+    <TextView
+        android:id="@+id/imagePathView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addArtCategory"
+        android:textColor = "#FFFFFF"
+        android:layout_below="@+id/addArtDesc"
+        android:layout_marginTop="10dp"
+        android:text="Image Path"
+        android:textSize="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/addArtBtn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/addArtCategory"
+        android:background="@drawable/button_selector_xml"
+        android:text="Add"
+        android:textColor="#800000"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/addArtUploadImage"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignBaseline="@+id/addArtBtn"
+        android:layout_alignBottom="@+id/addArtBtn"
+        android:layout_alignRight="@+id/editAddDesc"
+        android:background="@drawable/button_selector_xml"
+        android:text="Upload Image"
+        android:textColor="#800000"
+        android:textSize="24dp" />
+
+</RelativeLayout>

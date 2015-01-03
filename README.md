@@ -1,4 +1,4 @@
 Onion-s-Arts
 ============
 
-Android app trading arts online
+Android app posting and searching for commercial arts.

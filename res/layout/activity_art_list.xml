@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2">
+
+    <ListView
+        android:id="@+id/courseList"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/editValue"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:dividerHeight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentLeft="true" >
+    </ListView>
+    
+    <TextView
+        android:id="@+id/welcomeView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editValue"
+        android:layout_alignTop="@+id/addArtBtn"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="5dp"
+        android:textSize="30dp"
+        android:textColor ="#FFFFFF"
+        android:textStyle="bold|italic"
+        android:text="Welcome User!"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spinnerFilter"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/editValue"
+        android:layout_alignTop="@+id/addArtBtn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/welcomeView"
+        android:textSize="25dp"
+        android:entries="@array/filter_arrays"
+        android:prompt="@string/filter_prompt" />
+
+    <EditText
+        android:id="@+id/editValue"
+         android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/spinnerFilter"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="28dp"
+        android:textSize="25dp"
+        android:ems="10" >
+        </EditText>
+
+    <Button
+        android:id="@+id/buttonFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editValue"
+        android:layout_toRightOf="@+id/editValue"
+        android:text="Go" />
+
+    <Button
+        android:id="@+id/buttonFilter"
+        android:background="@drawable/button_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editValue"
+        android:layout_toRightOf="@+id/editValue"
+        android:onClick="filterArts"
+        android:textColor="#ffffff"
+        android:text="Filter"/>
+
+    <Button
+        android:id="@+id/addArtBtn"
+        android:background="@drawable/button_selector_xml"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonFilter"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:onClick="addNewArt"
+        android:textColor="#ffffff"
+        android:text="Add Art To Store" />
+
+
+
+</RelativeLayout>
